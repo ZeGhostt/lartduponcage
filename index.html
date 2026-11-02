@@ -1,0 +1,232 @@
+*<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'art du ponçage - Rénovation de Parquet & Escalier</title>
+    <style>
+        /* --- STYLE GENERAL --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            color: #6d071a;
+            background-color: #6d071a;
+        }
+
+        /* --- HEADER & NAVIGATION --- */
+        header {
+            background-color: #e9e9e9;
+            padding: 3px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #6d071a; /* Couleur bois moyen */
+            text-transform: uppercase;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a3c2b;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        /* --- SECTION HERO (ACCUEIL VISUEL) --- */
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1626245053158-9be1f600f7bb?q=80&w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: #d8d6d3;
+            padding: 120px 10%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+
+        /* --- BOUTON D'ACTION --- */
+        .btn-contact {
+            background-color: #7c3f1d;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .btn-contact:hover {
+            background-color: #a67f57;
+        }
+
+        /* --- GRILLE DE PHOTOS "AVANT/APRÈS" --- */
+        .gallery-section {
+            padding: 70px 10%;
+            background-color: #c7c3c3;
+        }
+
+        .gallery-section h2 {
+            text-align: center;
+            color: #582900;
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .photo-card {
+            background-color: #f2efef;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        .ba-container {
+            display: flex;
+            gap: 8px;
+        }
+
+        .ba-image {
+            width: 50%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 10px;
+            color: #ffffff;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .photo-card h3 {
+            margin-top: 15px;
+            color: #582900;
+            font-size: 1.2em;
+        }
+
+        /* --- SECTION CONTACT --- */
+        .contact-section {
+            background-color: #f1ede8;
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #582900;
+            margin-bottom: 15px;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #6f071a;
+            color: #ffffff;
+            padding: 25px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2em; }
+            .hero p { font-size: 1em; }
+            header { flex-direction: column; gap: 15px; }
+            nav a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- --- HEADER --- -->
+    <header>
+        <div class="logo-container" style="display: flex; align-items: center; gap: 12px;">
+                    <img src="/home/quentin/Téléchargements/Gemini_Generated_Image_fn7e3cfn7e3cfn7e-removebg-preview.png" alt="L'art du ponçage" 
+                    style="height: 100px; width: auto;">
+                    <div class="logo">L'art du ponçage</div>
+                    </div>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#realisations">Nos Réalisations</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.facebook.com/profile.php?id=100088355140012&locale=fr_FR" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </nav>
+    </header>
+
+    <!-- --- HERO --- -->
+    <section class="hero" id="accueil">
+        <h1>Rénovation de Parquet & Escalier en Normandie</h1>
+        <p>Expertise artisanale pour poncer, vitrifier et sublimer vos bois anciens. Devis gratuit et intervention rapide.</p>
+        <a href="#contact" class="btn-contact">Demander un devis</a>
+    </section>
+
+    <!-- --- GALERIE PHOTO --- -->
+    <section class="gallery-section" id="realisations">
+        <h2>Découvrez nos Rénovations "Avant / Après"</h2>
+        
+        <div class="photo-grid">
+            <!-- Chantier 1 -->
+            <div class="photo-card">
+                <div class="ba-container">
+                    <div class="ba-image" style="background-image: url('/home/quentin/Images/3031.jpg');">Avant</div>
+                    <div class="ba-image" style="background-image: url('/home/quentin/Images/3032.jpg');">Après</div>
+                </div>
+                <h3>Rénovation parquet</h3>
+            </div>
+
+            <!-- Chantier 2 -->
+            <div class="photo-card">
+                <div class="ba-container">
+                    <div class="ba-image" style="background-image: url('/home/quentin/Images/3029.jpg');">Avant</div>
+                    <div class="ba-image" style="background-image: url('/home/quentin/Images/3030.jpg');">Après</div>
+                </div>
+                <h3>Rénovation Escalier</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- SECTION CONTACT --- -->
+    <section class="contact-section" id="contact">
+        <h2>Besoin d'un renseignement ou d'un devis ?</h2>
+        <p>Contactez-nous directement pour discuter de votre projet de rénovation.</p>
+        <br>
+        <a href="mailto:dplazis@hotmail.com" class="btn-contact">Nous contacter par Email</a>
+    </section>
+
+    <!-- --- FOOTER --- -->
+    <footer>
+        <p>&copy; 2026 L'art du ponçage - Rénovation Parquet & Escalier. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
